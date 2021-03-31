@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorSetPage" prefHeight="730.0" prefWidth="950.0" style="-fx-background-color: #5D6D7E; -fx-background-radius: 50px;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CreateNewSetPageController">
+   <children>
+      <JFXButton fx:id="buttonGoBack" layoutX="792.0" layoutY="14.0" onAction="#clickButtonGoBack" prefHeight="48.0" prefWidth="144.0" style="-fx-background-radius: 50px; -fx-background-color: #7DCEA0;" text="Go Back">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="28.0">
+               <image>
+                  <Image url="@../Icon/left-arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Pane layoutX="119.0" layoutY="220.0" prefHeight="291.0" prefWidth="712.0" style="-fx-background-color: #ECF0F1; -fx-background-radius: 50px;">
+         <children>
+            <Label layoutX="59.0" layoutY="73.0" text="Set Name:">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="tFSetName" layoutX="170.0" layoutY="69.0">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="60.0" layoutY="132.0" text="First Column Name:">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="tFFirstColumnName" layoutX="264.0" layoutY="128.0">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="59.0" layoutY="191.0" text="Second Column Name:">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="tFSecondColumnName" layoutX="286.0" layoutY="187.0">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="buttonAddSet" layoutX="552.0" layoutY="131.0" onAction="#clickButtonAddSet" style="-fx-background-color: #7DCEA0;" text="Add Set">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorStudyPage" prefHeight="730.0" prefWidth="950.0" style="-fx-background-color: #5D6D7E; -fx-background-radius: 50px;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StudyPageController">
+   <children>
+      <JFXButton fx:id="buttonGoBack" layoutX="792.0" layoutY="14.0" onAction="#clickButtonGoBack" prefHeight="48.0" prefWidth="144.0" style="-fx-background-radius: 50px; -fx-background-color: #7DCEA0;" text="Go Back">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="28.0">
+               <image>
+                  <Image url="@../Icon/left-arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="buttonChangeColumn" layoutX="396.0" layoutY="345.0" onAction="#clickButtonChangeColumn" style="-fx-background-color: #F9E79F;" text="Change Order">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="20.0" layoutY="364.0" prefHeight="3.0" prefWidth="350.0" />
+      <Pane layoutX="149.0" layoutY="74.0" prefHeight="200.0" prefWidth="677.0" style="-fx-background-color: #ECF0F1; -fx-background-radius: 50px;">
+         <children>
+            <JFXTextField fx:id="tFAnswer" layoutX="214.0" layoutY="82.0" onAction="#clickTFAnswer" prefHeight="36.0" prefWidth="166.0">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="buttonShowAnswer" layoutX="478.0" layoutY="81.0" onAction="#clickButtonShowAnswer" style="-fx-background-color: #F5B7B1;" text="Show Answer">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="labelQuestion" layoutX="23.0" layoutY="87.0" text="Question">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelTruth1" alignment="CENTER" layoutX="308.0" layoutY="148.0" prefHeight="22.0" prefWidth="61.0">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font></Label>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="165.0" layoutY="85.0">
+               <image>
+                  <Image url="@../Icon/right-arrow.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="buttonOK" layoutX="405.0" layoutY="81.0" onAction="#clickButtonOK" prefHeight="39.0" prefWidth="61.0" style="-fx-background-color: #85C1E9;" text="OK">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Separator layoutX="580.0" layoutY="366.0" prefHeight="3.0" prefWidth="350.0" />
+      <Pane layoutX="137.0" layoutY="423.0" prefHeight="200.0" prefWidth="677.0" style="-fx-background-radius: 50px; -fx-background-color: #ECF0F1;">
+         <children>
+            <JFXButton fx:id="buttonAnswer1" layoutX="37.0" layoutY="81.0" onAction="#controlQuestion" style="-fx-background-color: #7DCEA0;">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="buttonAnswer2" layoutX="293.0" layoutY="81.0" onAction="#controlQuestion" style="-fx-background-color: #7DCEA0;">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="buttonAnswer3" layoutX="551.0" layoutY="81.0" onAction="#controlQuestion" style="-fx-background-color: #7DCEA0;">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="labelQuestion1" layoutX="295.0" layoutY="28.0" text="Question">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelTruth2" alignment="CENTER" layoutX="307.0" layoutY="149.0" prefHeight="17.0" prefWidth="61.0" style="-fx-alignment: center;">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font></Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
